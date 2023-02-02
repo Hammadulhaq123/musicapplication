@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./Assets/favicon-32x32.png" type="image/x-icon">
+    <title>XMusic.</title>
+</head>
+<body>
+    <audio src="./Assets/Tracks/jhoomepathan.mpeg" id="audio-source"></audio>
+    <section class="home-section" id="home">
+        <!-- Header Carousel -->
+        <div class="carousel">
+            <img src="./Assets/Covers/carousel/lofi.jpeg" class="active" alt="">
+            <img src="./Assets/Covers/carousel/lofi2.jpeg" alt="">
+            <img src="./Assets/Covers/categories/new2.jpg" alt="">
+            <img src="./Assets/Covers/carousel/lofi3.jpeg" alt="">
+            <img src="./Assets/Covers/carousel/lofi4.jpeg" alt="">
+            <img src="./Assets/Covers/carousel/lofi5.jpeg" alt="">
+        </div>
+        <h1 class="heading">Categories</h1>
+        <div class="playlist-group">
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/bollywood.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Bollywood</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/pakistani.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Pakistani Songs</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/english.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">English</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/lofi.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Lofi Music</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/sad.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Sad Songs</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/bollywood.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Bollywood</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/pakistani.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Pakistani Songs</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/english.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">English</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/lofi.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Lofi Music</p>
+            </div>
+
+        </div>
+        <h1>Based on Your Listening</h1>
+        <div class="playlist-group">
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/new1.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Classics</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/new2.jpg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Favorites</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/new3.jpg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Funky</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/lofi.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Lofi</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/new4.jpg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Playlist</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/new1.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Classics</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/new2.jpg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Favorites</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/new3.jpg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Funky</p>
+            </div>
+            <div class="playlist-card">
+                <img src="./Assets/Covers/categories/lofi.jpeg" alt="" class="playlist-card-img">
+                <p class="playlist-card-name">Lofi</p>
+            </div>
+           
+        </div>
+    </section>
+
+<!-- Music player -->
+    <section class="music-player-section">
+
+        <img src="./Assets/Covers/categories/back.png" class="back-btn icon hide" alt="">
+        <img src="./Assets/Covers/categories/hamburger.png" class="nav-btn icon hide" alt="">
+    
+        <h1 class="current-song-name">song 1</h1>
+        <p class="artist-name hide">artist 1</p>
+    
+        <img src="./Assets/Covers/scg/jhoomepathan.jpg" class="cover hide rotate" alt="" id="cover">
+    
+        <div class="seek-bar-container">
+            <input type="range" class="music-seek-bar" value="0">
+            <p class="current-time hide">00 : 00</p>
+            <p class="duration hide">00 : 00</p>
+        </div>
+    
+        <div class="controls">
+            <i class="fa-sharp fa-solid fa-caret-up caret" id="arrow"></i>
+            <span class="fas fa-redo"></span>
+            <div class="main">
+                <i class="fas fa-backward active"></i>
+                <i class="fas fa-play active"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-forward active"></i>
+            </div>
+            <input type="range" class="volume-slider" max="1" value="1" step="0.1">
+            <span class="fas fa-volume-up"></span>
+        </div>
+        <div id="wave">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+        </div>  
+    
+    </section>
+
+    <section class="playlist">
+
+        <img src="./Assets/Covers/categories/back.png" class="back-btn icon" alt="">
+
+        <h1 class="title">Playlist</h1>
+
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/jhoomepathan.jpg" alt="" >
+                <i class="fas fa-pause"></i>
+            </div>
+            <p class="name">Jhoome Pathan</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/chedkhaniyan.jpg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">MundaHoon</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/maverick.jpg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">Maverick</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/bones.jpeg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">Bones</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/kurulus.jpeg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">Kurulus Osman</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/keariya.jpg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">Kesariya</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/pasoori.jpeg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">Pasoori</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/scg/nasha.jpeg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">Jeda Nasha</p>
+        </div>
+        <div class="queue active">
+            <div class="queue-cover">
+                <img src="./Assets/Covers/carousel/lofi2.jpeg" alt="">
+                <i class="fas fa-play"></i>
+            </div>
+            <p class="name">Apna Bana le</p>
+        </div>
+        
+
+
+    </section>
+
+
+    <script src="./data.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
