@@ -95,7 +95,13 @@ body{
     max-width: 150px;
     height: 100%;
     margin-right: 20px;
+
 }
+
+
+
+
+
 
 .playlist-card-img{
     width: 100%;
@@ -183,7 +189,7 @@ body{
     position: absolute;
     top: -4px;
     height: 8px;
-    background: rgba(0, 0, 0, 0.604);
+    background: rgba(0, 0, 0, 0.389);
     overflow: hidden;
 }
 
@@ -191,7 +197,7 @@ body{
     -webkit-appearance: none;
     height: 10px;
     width: 5px;
-    background: rgb(6, 142, 233);
+    background: rgb(249, 250, 251);
     cursor: pointer;
     box-shadow: -400px 0 0 400px rgb(6, 142, 233);
 }
@@ -481,5 +487,22 @@ body{
     }
     .carousel{
         height: 60%;
+    }
+    .playlist-card{
+        animation: scrolli 80s linear infinite;
+    }
+    @keyframes scrolli {
+        0% { transform: translateX(200px); }
+        /* 50% { transform: translateX(0);} */
+        100% { transform: translateX(calc(-200px))}
+    }
+    .cardj{
+        animation: scrollj 80s linear infinite;
+        
+    }
+    @keyframes scrollj {
+        0% { transform: translateX(-200px); }
+        /* 50% { transform: translateX(0);} */
+        100% { transform: translateX(calc(200px))}
     }
 }
